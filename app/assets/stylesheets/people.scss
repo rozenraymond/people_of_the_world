@@ -1,0 +1,81 @@
+// Place all the styles related to the People controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$title-font: 'Fira Sans Extra Condensed', sans-serif;
+$narrative-font: 'Playfair Display', serif;
+
+//CSS for showing people's profile in each country
+.showPage{
+  width: 100vw;
+  height:100vh;
+  background-color: #F8F8F8;
+}
+
+.profile {
+  margin: 0% 8% 5% 8%;
+  // border: 1px solid black;
+  padding: 20px;
+
+}
+
+#profileTitle {
+  text-align: center;
+  font-family: $title-font;
+  font-size: 40px;
+  margin: 1%;
+}
+
+.card {
+  margin: 0;
+  height: 220px;
+  width: calc(100%/3);
+  display: inline-block;
+  // border: 1px solid black;
+  float:left;
+  clear:none;
+  padding: 10px;
+}
+
+.narrative {
+  font-size: 13px;
+  width: 95%;
+  font-family: $narrative-font;
+  height: 95%;
+  text-align: justify;;
+  margin: 0 auto;
+  padding: 8px 15px;
+  background-color: #BEEF9E;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  line-height: 21px;
+}
+
+.narrative:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+#shuffle {
+  text-align: center;
+  margin: 0 auto;
+
+  input {
+    border-radius: 3px;
+    font-size: 12px;
+    width: 70px;
+    height: 35px;
+    outline: none;
+    border: 2px solid #ED254E;
+    color: #ED254E;
+    background-color: #fff;
+  }
+
+  input:hover {
+    color: #fff;
+    background-color: #ED254E;
+
+  }
+}

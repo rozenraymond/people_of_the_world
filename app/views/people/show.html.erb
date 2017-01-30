@@ -1,0 +1,32 @@
+<div class="showPage">
+<div class = "profile">
+
+  <h2 id="profileTitle">People of <%= @people[0].country %> </h2>
+
+  <% @people.each do |p| %>
+
+  <div class="card">
+    <div class="narrative">
+      <p>" I am a <%= p.age %> year old <%= p.sex.downcase %> from <%= p.country %>. I was born <%= p.dob %> and speaks <%= p.language %>.
+
+      <% if p.internet === false %>
+        Unfortunately, I do not have internet access here.
+      <% else %>
+        Fortunately, I do have internet access which allows me to connect with the people around the world.
+      <% end %>
+
+        My religion is <%= p.religion.gsub( /\d.*/, "" ) %>.
+
+        My yearly income is <%= p.income %> USD. "</p>
+      </div>
+    </div>
+
+  <% end %>
+
+    <div id="shuffle">
+      <input type="button" value="Shuffle" onClick="window.location.reload()">
+    </div>
+
+
+</div>
+</div>
