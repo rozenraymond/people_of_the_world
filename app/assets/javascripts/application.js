@@ -14,5 +14,4 @@
 //= require jquery_ujs
 //= require country
 //= require leaflet
-//= require turbolinks
 //= require_tree .
